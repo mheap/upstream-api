@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  title: Runtime Groups Configuration API
+  title: Runtime Groups Configuration API Changed
   version: 2.0.0
   description: The API for configurating Konnect Runtime Groups.
   contact:
