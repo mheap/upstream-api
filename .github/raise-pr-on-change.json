@@ -1,0 +1,8 @@
+{
+  "mheap/downstream-api": [
+    {
+      "src": "runtime-groups.yaml",
+      "dest": "a-folder/rtg.yaml"
+    }
+  ]
+}
