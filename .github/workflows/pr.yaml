@@ -1,0 +1,20 @@
+name: Raise PR on change
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  raise-pr-on-change:
+    name: Raise PR on change
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Raise PR on change
+        uses: mheap/raise-pr-on-change-action@main
+        with:
+          token: ${{ secrets.PAT }}
+          configFile: ".github/raise-pr-on-change.json"
+          prBranch: automated-update
+          targetBranch: main
+          prTitle: "Automated update X"
+          prBody: "This adds files based on upstream repo Y"
